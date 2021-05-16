@@ -10,12 +10,12 @@ import java.util.List;
 @Dao
 public interface UserDao {
     @Insert
-    void addUser(User... user);
+    public void addUser(User... user);
 
     @Query("Select * from user")
-    public List<User> getAllUsers();
+    public List<User> getAll();
 
     @Delete
-    void deleteUser(User user);
+    public void deleteUser(User user);
 
 }
